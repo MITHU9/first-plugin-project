@@ -15,6 +15,7 @@ function openPopup(targetImg) {
   //! Selecting All images....
   img = document.getElementsByClassName(targetImg);
   //console.log(img);
+  //? AddEventListener for selected images....
   for (let i = 0; i < img.length; i++) {
     img[i].style.cursor = "pointer";
     img[i].addEventListener("click", function () {
@@ -71,6 +72,7 @@ function leftClick() {
   checkArrow();
 }
 
+//! Function to Check Arrow Display....
 function checkArrow() {
   targetImageIndex();
   if (img.length == 1) {
